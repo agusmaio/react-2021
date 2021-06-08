@@ -5,6 +5,7 @@
 .App-logo {
   height: 20vmin;
   pointer-events: none;
+  border-radius: 100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +36,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.link {
+  color: #fff;
+}
+.link:hover{
+  color: #fafa;
+}
+.navbar {
+  width: 1000px;
+}
+.div-navBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  margin-bottom: 20px; 
 }
