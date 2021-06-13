@@ -1,0 +1,6 @@
+#cartFont {
+  color: black;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+}
