@@ -1,0 +1,45 @@
+.carrito-selector {
+    background: #f1f1f1;
+    display: inline-block;
+    width: 20rem;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .carrito-input {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .carrito-input input {
+    padding: 10px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  .carrito-input button {
+    border: none;
+    background: none;
+    color: #157bf0;
+    font-weight: bold;
+    font-size: 1.125rem;
+    cursor: pointer;
+  }
+  
+  .carrito-add {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #222;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
