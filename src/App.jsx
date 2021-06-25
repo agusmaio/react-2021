@@ -2,7 +2,7 @@ import logo from './logo-iphonefamily.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './Components/NavBar/NavBar';
-import { ItemListContainer } from './Components/ItemListContainer';
+import { ItemListContainer } from './Components/ItemListContainer/ItemListContainer';
 
 
 
@@ -20,7 +20,7 @@ function App() {
         <button className="btn btn-primary App-link"
           target="_blank"
           rel="noopener noreferrer" 
-          ><a className='link' href="https://agusmaio.github.io/">Ingresa al Sitio</a></button>
+          ><a className='link' href="https://agusmaio.github.io/"> </a></button>
       </header>
     </div>
   );
