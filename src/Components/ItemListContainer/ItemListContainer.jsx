@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
 
 const apiCall = () => {
@@ -30,7 +29,7 @@ const apiCall = () => {
   });
 };
 
-export const ItemListContainer = (props) => {
+const ItemListContainer = (props) => {
   const [data, setData] = useState([]);
   useEffect(() => {
     const getData = async () => {
@@ -47,3 +46,5 @@ export const ItemListContainer = (props) => {
     </div>
   );
 };
+
+export default ItemListContainer;

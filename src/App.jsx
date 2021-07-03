@@ -2,7 +2,8 @@ import logo from './logo-iphonefamily.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './Components/NavBar/NavBar';
-import { ItemListContainer } from './Components/ItemListContainer/ItemListContainer';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
 
 
 
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar/>
-        <ItemListContainer greeting={"esto es un itemListContainer"}/>
+        {/* <ItemListContainer greeting={"esto es un itemListContainer"}/> */}
+        <ItemDetailContainer id={1} /> 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           iPhone Family Arg
