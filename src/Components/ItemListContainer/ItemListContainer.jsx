@@ -1,44 +1,31 @@
+import { Link } from '@material-ui/core';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/ItemList';
+import mockedData from '../../mockData.json';
 
-const apiCall = () => {
-  const data = [
-    {
-      id: 1,
-      title: 'iPhone',
-      description: 'Descripcion de iPhone',
-      price: 1000,
-      pictureUrl:
-        'https://i.blogs.es/a812a4/iphone-12-iphone-12-pro-analisis-applesfera--28/1366_2000.jpg',
-      stock: 2,
-    },
-    {
-      id: 2,
-      title: 'iPhone 2',
-      description: 'Descripcion de iPhone 2',
-      price: 500,
-      pictureUrl:
-        'https://i.blogs.es/a812a4/iphone-12-iphone-12-pro-analisis-applesfera--28/1366_2000.jpg',
-      stock: 5,
-    },
-  ];
+
+const apiCall = (category) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(data);
-    }, 3000);
+      const filteredData = category ? mockedData.filter(item => item.category === parseInt(category)) : mockedData;
+      resolve(filteredData);
+    }, 2000);
   });
 };
 
 const ItemListContainer = (props) => {
+  const params = useParams();
+
   const [data, setData] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      const data = await apiCall();
+      const data = await apiCall(params.id);
       setData(data);
     };
     getData();
   }, []);
-  console.log(data);
+
   return (
     <div>
       <strong>{props.greeting}</strong>

@@ -14,9 +14,14 @@
   }
 }
 
-.App-header {
+body,
+html,
+#root,
+.App {
   background-color: #282c34;
-  min-height: 100vh;
+}
+
+.App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,17 +46,17 @@
 .link {
   color: #fff;
 }
-.link:hover{
+.link:hover {
   color: #fafa;
 }
 .navbar {
   width: 1000px;
 }
-.div-navBar{
+.div-navBar {
   display: flex;
   justify-content: space-between;
 }
 
 .navbar {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }

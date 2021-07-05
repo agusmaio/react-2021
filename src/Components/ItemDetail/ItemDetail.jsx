@@ -15,7 +15,7 @@ const ItemDetail = ({ data }) => {
         <img className="img-card" src={data.pictureUrl} />
         <p>
           <span>{priceFormated[0]}</span>
-          <span class='decimal'>{priceFormated[1]}</span>
+          <span className='decimal'>{priceFormated[1]}</span>
         </p>
         <ItemCount stock={data.stock} initial={1} onAdd={onAdd} />
       </div>

@@ -1,0 +1,20 @@
+[
+    {
+      "id":1,
+      "title":"iPhone",
+      "description":"Descripcion de iPhone",
+      "price":1000,
+      "pictureUrl":"https://i.blogs.es/a812a4/iphone-12-iphone-12-pro-analisis-applesfera--28/1366_2000.jpg",
+      "stock":2,
+      "category":1
+    },
+    {
+      "id":2,
+      "title":"iPhone 2",
+      "description":"Descripcion de iPhone 2",
+      "price":500,
+      "pictureUrl":"https://i.blogs.es/a812a4/iphone-12-iphone-12-pro-analisis-applesfera--28/1366_2000.jpg",
+      "stock":5,
+      "category":2
+    }
+]
